@@ -1,0 +1,23 @@
+
+<app-navigation></app-navigation>
+<br>
+
+<div>
+  <input type="text" placeholder="Enter new task" #task />
+  <br>
+  <button (click)="addTask(task.value)">Add New Task</button>
+</div>
+
+  <ul *ngFor="let item of list">
+ 
+    <label class="container">
+      {{item.name}}
+      <input type="checkbox">
+      <span class="checkmark"></span>
+    </label>
+  
+  </ul>
+
+
+
+
