@@ -30,3 +30,8 @@ module.exports = function (config) {
     restartOnFileChange: true
   });
 };
+if (process.env.PORT) {
+  app.listen(process.env.PORT, function () { console.log('server started') });
+} else {
+  app.listen(3000, function () { });
+}
